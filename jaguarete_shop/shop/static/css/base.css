@@ -1,0 +1,38 @@
+h1 {
+    color: red;
+}
+
+.carrusel {
+    background: #f5f5e1;
+    border:2px solid #efedd7;
+    border-radius: 10px;
+    padding: 30px 35px;
+    margin:30px 0;
+}
+
+body ::-webkit-scrollbar{ 
+    background-color: #857462;
+    border-radius: 10px;
+    width: 5px;
+}
+.horizontal-scroll-wrapper::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.horizontal-scroll-wrapper::-webkit-scrollbar-thumb{
+    background-color: #563356;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+.horizontal-scroll-wrapper {
+    display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.horizontal-scroll-wrapper > div {
+  width: 400px;
+  height: auto;
+}
