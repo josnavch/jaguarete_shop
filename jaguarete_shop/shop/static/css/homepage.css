@@ -1,10 +1,10 @@
 /* path => static/css/homepage.css */
 
 .navbar{
-    background-color: #F6F5D7;
+    background-color: white;
     margin:0%;
     padding: 0%;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(167, 167, 167);
 }
 
 .title1{
