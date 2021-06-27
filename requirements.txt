@@ -14,6 +14,8 @@ distlib==0.3.2
 Django==3.2.4
 django-bootstrap4==3.0.1
 filelock==3.0.12
+fontawesome-free==5.15.3
+fontawesomefree==5.15.3
 idna==2.10
 ipykernel==5.5.5
 ipython==7.24.1
@@ -192,5 +194,3 @@ vonage==2.5.5
 wcwidth==0.2.5
 wikipedia==1.4.0
 wrapt==1.12.1
-fontawesome-free==5.15.3
-fontawesomefree==5.15.3
