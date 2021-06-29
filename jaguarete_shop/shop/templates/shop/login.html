@@ -1,0 +1,44 @@
+<!-- path -> template/shop/login.html -->
+
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<!-- path -> shop/templates/shop/login.html -->
+
+{% load static %}
+
+<link rel="stylesheet"  href="{% static 'css/login.css' %}">
+
+<div class="login-page">
+  <div class="form">
+    <form method="POST" action="">
+      {% csrf_token %}
+      <h3 class="login-title">LOGIN</h3>
+      <div class="input-group mb-3">
+        <input type="text" name="username" placeholder="Username..." class="form-control">
+      </div>
+      <div class="input-group mb-2">
+          <input type="password" name="password" placeholder="Password..." class="form-control" >
+      </div>
+      <button type="submit"> Submit </button>
+      <p class="message">Don't have an account? <a href="{% url 'shop:register' %}">Register</a></p>
+    </form>
+{% for message in messages %}
+   <p class= "text-center">{{message}}</p>
+{% endfor %}
+  </div>
+</div>
+
+
+<!-- baltlogs.com -->
+
+<script>
+    $('.alternate').click(function () {
+        $('form').animate({ height: "toggle", opacity: "toggle" }, "slow");
+    });
+</script>
+
+

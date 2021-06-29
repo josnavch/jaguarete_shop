@@ -1,0 +1,572 @@
+/* path => static/css/home.scss */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+
+$uva:#563356;
+$naranja:#ed8f21;
+//$rosa:#d986b0;
+$rosa:#0d97ed;
+//$carmesi:#9f3154;
+$carmesi:rgb(158, 212, 247);
+$bronce:#857462;
+$cafe:#704b43;
+$white: #ffffff;
+$crema-bg: #ffffee; // fondo del header
+$crema-l-bg: #efedd6; // líneas top y bottom de header y footer
+$crema-f-bg: #f5f5ef; // fondo de forms
+$gris-bg:#ebebeb; // fondo cards home user logged (casa)
+$crema-amarillo:#f5f5e1; // fondo de carruseles
+$borde-crema:#efedd7; // borde para forms
+$gris-azul:#3d3d4d;
+
+$light:200;
+$regular:400;
+$medium:500;
+$bold:700;
+$semi-bold: 600;
+$extra-bold: 800;
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: $cafe;
+}
+
+a {
+    color: $naranja;
+}
+a:hover {
+    color: $cafe;
+}
+
+ul {
+    list-style-type:none;
+    padding: 0;
+    line-height: 1.8em;
+}
+
+.fs-6 {
+    font-size: 1.4em;
+}
+
+.fs-7 {
+    font-size: 1.9em;
+}
+
+.fs-8 {
+    font-size: 2.4em;
+}
+
+.fs-9 {
+    font-size:2.5em;
+}
+
+.light {
+    font-weight: $light;
+}
+
+.regular {
+    font-weight: $regular;
+}
+
+.medium {
+    font-weight: $medium;
+}
+
+.bold {
+    font-weight: $bold;
+}
+.semi-bold {
+    font-weight: $semi-bold;
+}
+.extra-bold {
+    font-weight: $extra-bold;
+}
+
+.btn-padding {
+    padding: 15px 40px;
+}
+
+.lh-1em {
+    line-height: 1.25em;
+}
+
+.flip-hor {
+    transform: rotate(90deg);
+}
+
+.titulo-formulario {
+    font-weight: $medium;
+    font-size: 1.4em;
+    color: $naranja;
+    text-align:center;
+    text-transform: uppercase;
+}
+
+.boton-uva{
+    background-color: $uva;
+    color: white;
+    font-size: 1.1em;
+    font-weight: $bold;
+    padding: 15px 35px;
+    border-radius: 15px;
+}
+
+.boton-uva:hover{
+    background-color: $carmesi;
+    color:white;
+    text-decoration: none;
+}
+.boton-naranja {
+    background-color: $naranja;
+    color: white;
+    font-size: 1.1em;
+    font-weight: $semi-bold;
+    padding: 15px 40px;
+    border-radius: 10px;
+    margin: 15px 0px;
+}
+
+.boton-naranja:hover {
+    background-color: $uva;
+    color: white;
+}
+
+.caja-naranja {
+    background-color: $naranja;
+    color: white;
+    font-size: 0.8em;
+    padding: 15px 40px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+.caja-naranja a{
+    color: white;
+    font-weight: $extra-bold;
+}
+.caja-naranja a:hover{
+    color: $uva;
+}
+
+.caja-naranja .form-check-input {
+    margin-left: -1.1em;
+}
+
+.caja-crema {
+    border-radius: 20px;
+    background-color: $crema-amarillo;
+    color: $cafe;
+}
+.caja-crema .icon-input-group {
+    background-color: transparent;
+    color: $cafe;
+    border:none!important;
+    padding-left: 20px;
+}
+
+.caja-crema .icon-form-control::placeholder {
+    color: $cafe;
+    font-size: 1.2em;
+    font-weight: $regular;
+}
+
+.caja-crema .fa-search {
+    font-size: 3em;
+}
+
+// colores
+
+.crema-bg { 
+    background-color: $crema-bg;
+}
+
+.crema-l-bg {
+    background-color: $crema-l-bg;
+}
+
+.crema-f-bg {
+    background-color: $crema-f-bg;
+}
+
+.gris-bg{
+    background-color: $gris-bg;
+}
+
+.borde-crema {
+    border: 1px solid #efedd7;
+}
+
+.rounded15 {
+    border-radius: 15px;
+}
+
+.crema-amarillo {
+    background-color: $crema-amarillo;
+}
+
+.uva {
+    color: $uva;
+}
+
+.uva-bg {
+    background-color: $uva;
+}
+
+.naranja {
+    color: $naranja;
+}
+
+.naranja-bg {
+    background-color: $naranja;
+}
+
+.rosa {
+    color: $rosa;
+}
+
+.carmesi{
+    color: $carmesi;
+}
+.carmesi-bg {
+    background-color: $carmesi;
+}
+
+.bronce {
+    color:$bronce;
+}
+
+.bronce-bg {
+    background-color:$bronce;
+}
+
+.cafe{
+    color: $cafe;
+}
+
+.cafe-bg{
+    background-color: $cafe;
+}
+
+.white {
+    color:white;
+}
+
+// -- termina colores -- //
+
+.logo {
+    min-width: 90px;
+}
+
+.contenido {
+    margin:25px 0;
+}
+
+.menuLinks{
+    font-size: 1.2rem;
+    // font-family: sans-serif;
+    color: white!important;
+    border-bottom: 1px solid $uva;
+}
+
+.menuLinks:hover{
+    color: $rosa!important;
+    border-bottom: 1px solid $crema-bg;
+}
+
+.btnIngresar:hover{
+     color: white;
+     background-color: $naranja;
+    //  color: rgba(255, 255, 255, 1) !important;
+    //  box-shadow: 0 4px 16px rgb(39, 26, 43);
+    //  transition: all 0.2s ease;
+}
+
+.btnIngresar{
+    // background-color: rgb(79, 25, 93);
+    // background-color: #563356;
+    color: white;
+    // width: 135px;
+    // height: 45px;
+    border-radius: 15px;
+    // font-stretch: expanded;
+    // font-weight: 480;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.btnIngresarPrincipal{
+    // background: white;
+    color: white;
+    // font-size: 2rem;
+    // padding: 5px 35px;
+    // font-weight: 500;
+}
+
+.btnIngresarPrincipal:hover{
+    background-color:#ed8f21;
+    color: white;
+}
+
+.ahrefRegistrar{
+    // color: #ed8f21;
+    color: $naranja;
+    font-size: 1.2rem;
+    // font-stretch: extra-expanded;
+    // font-weight: normal;
+}
+.ahrefRegistrar:hover{
+    color: $cafe;
+    text-decoration: none!important;
+}
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.texto-encima{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.texto-encima h3 strong{
+    font-size: 3.5rem;
+    color: #886392;
+}
+.texto-encima h3{
+    font-size: 2.5rem;
+    color: #886392;
+    font-family: fangsong;
+}
+
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// .img{
+//     height:calc(100vh - 390px);
+//     width: 100%;
+// }
+
+.navbar {
+    border-top:6px solid $crema-l-bg;
+}
+.footer {
+    background-color: $carmesi;
+    color:white;
+    border-top:6px solid $crema-l-bg;
+    font-size: 0.9em;
+}
+
+.navbar-light .navbar-toggler {
+    background-color: $crema-bg;
+}
+
+.tarjeta {
+  border: 1px solid $borde-crema;
+  border-radius: 15px;
+  background-color: $crema-f-bg;
+  padding: 35px 45px;
+  font-weight: $regular;
+  color: $cafe!important;
+  margin: 10px 5px;
+}
+
+.my-personal-info{
+    background-color: $carmesi;
+    color: white;
+    font-size: 0.92em;
+    font-weight: $regular;
+    padding: 10px 20px;
+    border-radius: 15px;
+    line-height: 1.7em;
+    // border:6px solid #efedd6;
+    // font-size: 0.7em;
+    // width: 12%;
+    // font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    // margin-left: 8px;
+    // padding-left: 8px;
+    // padding-right: 8px;
+    // padding-bottom: 10px;
+    // padding-top: 10px;
+    // margin-right: 12px;
+    // margin-top: 20px;
+    // margin-bottom: 20px;
+    // border-top-width: 4px;
+    // border-bottom-width: 4px;
+    // border-radius: 15px;
+}
+.my-personal-info a{
+    font-size: 0.9em;
+    border: none!important;
+    padding: 0px;
+    border-bottom: 1px solid $carmesi!important;
+}
+
+.my-personal-info a:hover{
+    color: $borde-crema!important;
+    border-bottom: 1px solid $borde-crema!important;
+}
+
+.my-personal-info p{
+    margin-bottom:3px!important;
+}
+
+// media query para estilos en pantallas pequeñas
+
+@media only screen and(max-width: 575.98px) {
+  .boton-uva {
+    font-size: 0.9em;
+    font-weight: $bold;
+    padding: 10px 20px;
+    border-radius: 15px;
+  }
+  .ahrefRegistrar {
+      font-size: 0.9em;
+  }
+  .fs-7 {
+    font-size: 1.3em;
+  }
+  .tarjeta{
+      padding: 10px;
+      font-size: medium;
+  }
+  .row{
+      margin-right: 3px;
+      margin-left: 3px;
+  }
+  .input-field {
+      font-size: 0.9em!important;
+  }
+  .icon {
+      padding:0 5px 0 0;
+  }
+  .input-group-text {
+      padding: 5px;
+  }
+  .form-control {
+      font-size:0.9em!important;
+      padding: 25px 10px;
+  }
+  .col-12{
+      padding-right: 0px;
+      padding-left: 0px;
+  }
+  .my-personal-info {
+    font-size: medium;
+    padding: 10px;
+    line-height: 1.25em;
+    }
+    .fs-6 {
+    font-size: 1.3em;
+    }
+}
+
+// estilos para cartilla
+
+.portada {
+    background-color: LightSlateGray;
+    border-radius: 15px;
+    width: 277px!important;
+    height: 379px!important;
+}
+
+.portada-img {
+    //position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.portadilla-caja {
+    width: 205px!important;
+    margin:10px 0 15px 10px;
+}
+.portadilla {
+    background-color: LightSlateGray;
+    width: 205px!important;
+    height: 293px!important;
+}
+
+.portadilla-img {
+    //position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.portadilla-footer {
+    color: white;
+    font-size: 0.75em;
+    width: 205px!important;
+    max-width: 205px!important;
+    padding: 5px 10px;
+}
+
+.portadilla-footer a {
+    color: white;
+    font-size: 1em;
+}
+
+.cartilla {
+    color: $gris-azul;
+    background: rgba(254, 255, 254, 0.7)
+}
+
+.cartilla-caja {
+    margin-top:50px;
+}
+
+.cartilla-ind {
+    border-bottom:1px dotted wheat;
+    padding-bottom: 50px;
+}
+
+.carrusel {
+    background: $crema-amarillo;
+    border:2px solid $borde-crema;
+    border-radius: 10px;
+    padding: 30px 35px;
+    margin:30px 0;
+}
+
+body ::-webkit-scrollbar{ 
+    background-color: $bronce;
+    border-radius: 10px;
+    width: 5px;
+}
+.horizontal-scroll-wrapper::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.horizontal-scroll-wrapper::-webkit-scrollbar-thumb{
+    background-color: $uva;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+.horizontal-scroll-wrapper {
+    display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.horizontal-scroll-wrapper > div {
+  width: 400px;
+  height: auto;
+}
+
+.swal-button {
+    background-color: $naranja!important;
+}

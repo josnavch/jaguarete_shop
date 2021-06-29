@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'shop',
     'sorl.thumbnail',
     'bootstrap4',
-    'fontawesomefree'
+    'fontawesomefree',
+    'sass_processor'
 ]
 
 MIDDLEWARE = [
@@ -125,6 +126,22 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATIC_ROOT = os.path.join(os.path.dirname(__file__), "tmpstatic")
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+PROJECT_ROOT = os.path.abspath(os.path.join(__file__, os.path.pardir))
+
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'sass_processor.finders.CssFinder',
+]
+
+STATICFILES_DIRS = [
+    os.path.join(PROJECT_ROOT, 'static'),
+]
+
+SASS_PROCESSOR_ENABLED = True
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

@@ -1,0 +1,29 @@
+<!-- path -> template/shop/homepage.html -->
+{% extends "shop/index.html" %}
+{% load static %}
+{% load sass_tags %}
+{% sass_src 'css/home.scss' %}
+
+<div id="subheader">
+    <div class="m-auto container">
+        <div class="row crema-f-bg my-2">
+            <div class="col-sm p-0">
+                <img src="{% static 'img/myshop_logo.png' %}" class="img-fluid" />
+            </div>
+            <div class="col-sm text-center">
+                <div class="d-flex flex-column align-items-center h-100">
+                    <div class="m-auto">
+                        <p class="fs-6 extra-bold">Bienvenido a Jaguarete Shop</p>
+                        <p class="rosa fs-8 extra-bold lh-1em">
+                            Su tienda <br />
+                            Virtual
+                        </p>
+                        <a href="{% url 'shop:product_list' %}">
+                            <button class="btn mb-3 mb-md-0 boton-uva" > Productos &#62;</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
