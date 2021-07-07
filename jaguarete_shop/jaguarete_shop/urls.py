@@ -20,6 +20,7 @@ from django.contrib import admin
  
 urlpatterns = [
     path ('admin/', admin.site.urls),
+    path ('cart/',include('cart.urls')),
     path ('', include('shop.urls')), 
     ]
 

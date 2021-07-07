@@ -413,14 +413,4 @@ body ::-webkit-scrollbar {
 .swal-button {
   background-color: #ed8f21 !important; }
 
-.sidebar-nav {
-    margin-top: 20px;
-    padding: 0;
-    list-style: none;
-    margin-left: 12px;
-}
-h3{
-    color: blue
-}
-
 /*# sourceMappingURL=home.css.map */
